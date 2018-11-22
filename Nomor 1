@@ -1,0 +1,30 @@
+#include <iostream>
+
+using namespace std;
+
+int main(){
+
+int nilai,jmlh=0,max=0,min=0,i=1,jml_data; 
+    double rata; 
+    cout<<"Jumlah Data : ";cin>>jml_data; 
+    cout<<"Masukan Nilai Ke-"<<i<<" : ";cin>>nilai; 
+    i++; 
+    max=nilai; 
+    min=nilai; 
+    jmlh=jmlh+nilai; 
+    while(i<=jml_data) 
+    { 
+        cout<<"Masukan Nilai Ke-"<<i<<" : ";cin>>nilai; 
+        if(nilai>max) 
+            max=nilai; 
+        if(nilai<min) 
+            min=nilai; 
+        jmlh=jmlh+nilai; 
+        i++; 
+    } 
+rata=(double)jmlh/jml_data; 
+cout<<"Nilai Terendah : "<<min<<endl; 
+cout<<"Nilai Tertinggi : "<<max<<endl; 
+cout<<"Rata-Rata : "<<rata<<endl;
+return 0;
+}
